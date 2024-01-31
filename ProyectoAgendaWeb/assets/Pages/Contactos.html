@@ -7,18 +7,22 @@
     <link rel="stylesheet" href="../Styles/StyleContactos.css">
 </head>
 <body>
-    <h1>Lista de Contactos</h1>
+    <div class="container">
+        <section class="titulo-seccion">
+            <h1>Lista de Contactos</h1>
+        </section>
 
-    <ul id="lista-contactos">
-        <li>Juan - 123-456-7890</li>
-        <li>María - 987-654-3210</li>
-        <li>Pedro - 555-555-5555</li>
-        <li>Laura - 777-777-7777</li>
-        <li>Carlos - 888-888-8888</li>
-    </ul>
+        <section class="contenido-seccion">
+            <ul id="lista-contactos">
+                <li class="contacto-container">Juan  <p class="ptelefono">7777-8888</p><button class="detalle-btn">Detalles</button></li>
+                <li class="contacto-container">María <p class="ptelefono">6666-5555</p><button class="detalle-btn">Detalles</button></li>
+                <li class="contacto-container">Pedro <p class="ptelefono">1111-2222</p><button class="detalle-btn">Detalles</button></li>
+                <li class="contacto-container">Laura <p class="ptelefono">3333-4444</p><button class="detalle-btn">Detalles</button></li>
+                <li class="contacto-container">Carlos <p class="ptelefono">8888-9999</p><button class="detalle-btn">Detalles</button></li>
+            </ul>
 
-    <button id="agregar-contacto">Agregar Nuevo Contacto</button>
-
+            <button id="agregar-contacto">Agregar Nuevo Contacto</button>
+        </section>
+    </div>
 </body>
 </html>
-
