@@ -49,7 +49,7 @@ body {
 }
 
 .input-group input {
-    width: calc(100% - 22px); /* Ancho del 100% menos el padding y el borde */
+    width: calc(100% - 22px); 
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -61,7 +61,7 @@ body {
 }
 
 button {
-    width: calc(100%); /* Ancho del 100% menos el padding y el borde */
+    width: calc(100%); 
     padding: 10px;
     background-color: #4CAF50;
     color: white;
