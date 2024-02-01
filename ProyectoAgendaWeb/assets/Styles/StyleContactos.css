@@ -60,7 +60,7 @@ h1 {
     color: rgb(71, 71, 71);
 }
 
-.detalle-btn {
+.detalle-btn1, .detalle-btn2, .detalle-btn3, .detalle-btn4, .detalle-btn5 {
     background-color: #333; 
     border: none;
     color: white;
@@ -73,7 +73,7 @@ h1 {
 }
 
 
-.detalle-btn:hover {
+.detalle-btn1:hover, .detalle-btn2:hover, .detalle-btn3:hover, .detalle-btn4:hover, .detalle-btn5:hover {
     background-color: #555; 
 }
 
@@ -150,12 +150,12 @@ h1 {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
-    color: rgb(54, 54, 54);
+    color: rgb(26, 26, 26);
     border-radius: 10px;
 }
 
 .modal-content {
-    background-color: #b8b8b8;
+    background-color: #e0e0e0;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -270,4 +270,14 @@ a:hover {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.detalles {
+    display: none;
+    width: 100%;
+}
+
+.detalles p {
+    margin: 5px 0;
 }
