@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Contactos</title>
     <link rel="stylesheet" href="../Styles/StyleContactos.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <div class="header-buttons">
+            <button id="cerrar-sesion">Cerrar Sesión</button>
+            <button id="favoritos" onclick="window.location.href='pagina-de-favoritos.html'">Favoritos</button>
+        </div>
+    </header>
     <div class="container">
         <section class="titulo-seccion">
             <h1>Lista de Contactos</h1>
@@ -18,11 +25,34 @@
                 <li class="contacto-container">María <p class="ptelefono">6666-5555</p><button class="detalle-btn">Detalles</button></li>
                 <li class="contacto-container">Pedro <p class="ptelefono">1111-2222</p><button class="detalle-btn">Detalles</button></li>
                 <li class="contacto-container">Laura <p class="ptelefono">3333-4444</p><button class="detalle-btn">Detalles</button></li>
-                <li class="contacto-container">Carlos <p class="ptelefono">8888-9999</p><button class="detalle-btn">Detalles</button></li>
+                <li class="contacto-container">Carlos <p class="ptelefono">8888-8888</p><button class="detalle-btn">Detalles</button></li>
             </ul>
 
             <button id="agregar-contacto">Agregar Nuevo Contacto</button>
         </section>
+<div id="ventana-agregar-contacto" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Agregar Nuevo Contacto</h2>
+        <form id="formulario-contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="telefono-casa">Teléfono Casa:</label>
+            <input type="text" id="telefono-casa" name="telefono-casa" required>
+
+            <label for="telefono-empresa">Teléfono Empresa:</label>
+            <input type="text" id="telefono-empresa" name="telefono-empresa" required>
+
+            <button type="submit">Agregar Contacto</button>
+        </form>
     </div>
+</div>
+
+
+    <script src="../js/contactosJS.js"></script>
 </body>
 </html>

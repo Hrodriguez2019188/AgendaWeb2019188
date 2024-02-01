@@ -93,3 +93,139 @@ h1 {
 #agregar-contacto:hover {
     background-color: #cc6600; 
 }
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#formulario-contacto {
+    margin-top: 20px;
+}
+
+#formulario-contacto input[type="text"],
+#formulario-contacto input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+#formulario-contacto button[type="submit"] {
+    background-color: #f8af41;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#formulario-contacto button[type="submit"]:hover {
+    background-color: #a1722a;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgb(54, 54, 54);
+    border-radius: 10px;
+}
+
+.modal-content {
+    background-color: #b8b8b8;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #5bc0de !important; 
+    color: #ffffff !important;
+    padding: 10px 20px;
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.header-buttons {
+    margin-right: 20px; 
+}
+
+.header-buttons button {
+    background-color: #f0ad4e !important; 
+    color: #ffffff !important; 
+    border: none; 
+    padding: 8px 16px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-left: 10px; 
+}
+
+.header-buttons button:hover {
+    background-color: #eea236 !important; 
+}
+
+
+
+
+
