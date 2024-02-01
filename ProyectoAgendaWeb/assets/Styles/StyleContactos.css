@@ -191,11 +191,11 @@ h1 {
     cursor: pointer;
 }
 
-/* Estilos para el encabezado */
+
 header {
     background-color: #5bc0de !important; 
     color: #ffffff !important;
-    padding: 10px 20px;
+    padding: 20px 20px; 
     display: flex; 
     justify-content: flex-end; 
     align-items: center; 
@@ -206,6 +206,22 @@ header {
     width: 100%; 
     z-index: 1000; 
 }
+
+
+a {
+    background-color: #f0ad4e !important; 
+    color: #ffffff !important; 
+    text-decoration: none;
+    padding: 8px 16px; 
+    border-radius: 5px;
+    cursor: pointer; 
+    margin-left: 10px; 
+}
+
+a:hover {
+    background-color: #eea236 !important; 
+}
+
 
 .header-buttons {
     margin-right: 20px; 
