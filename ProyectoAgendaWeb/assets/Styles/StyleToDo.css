@@ -11,6 +11,21 @@ body {
     color: white; 
   }
   
+  a {
+    background-color: #f0ad4e !important; 
+    color: #ffffff !important; 
+    text-decoration: none;
+    padding: 8px 16px; 
+    border-radius: 5px;
+    cursor: pointer; 
+    margin-left: 10px; 
+}
+
+a:hover {
+    background-color: #eea236 !important; 
+}
+
+
   .container {
     max-width: 600px;
     margin: 0 auto;
@@ -27,7 +42,7 @@ body {
     margin-bottom: 10px;
   }
   
-  button {
+  .buttonadd {
     padding: 8px 12px;
     background-color: #4CAF50;
     color: white;
@@ -35,7 +50,7 @@ body {
     cursor: pointer;
   }
   
-  button:hover {
+  .buttonadd:hover {
     background-color: #45a049;
   }
   
@@ -50,7 +65,7 @@ body {
   }
   
   li button {
-    background-color: #f44336;
+    background-color: #ff1100;
     color: white;
     border: none;
     padding: 4px 8px;
@@ -58,3 +73,19 @@ body {
     float: right;
   }
   
+  li button:hover {
+    background-color: #ad0303;
+  }
+
+  li .buttonEdit {
+    background-color: #5a5a5a;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  li .buttonEdit:hover {
+    background-color: rgb(36, 36, 36);
+  }

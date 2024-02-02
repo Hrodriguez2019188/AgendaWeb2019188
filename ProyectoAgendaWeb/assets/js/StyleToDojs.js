@@ -6,7 +6,9 @@ function renderTasks() {
   
   tasks.forEach((task, index) => {
     const li = document.createElement('li');
-    li.innerHTML = `<span>[${task.priority}]</span> ${task.name} <button onclick="deleteTask(${index})">Eliminar</button>`;
+    li.innerHTML = `<span>[${task.priority}]</span> <span id="taskName_${index}" contenteditable="true">${task.name}</span> 
+                    <button class="buttonEdit" onclick="editTask(${index})">Editar</button>
+                    <button onclick="deleteTask(${index})">Eliminar</button>`;
     taskList.appendChild(li);
   });
 }
@@ -28,6 +30,17 @@ function addTask() {
 function deleteTask(index) {
   tasks.splice(index, 1);
   renderTasks();
+}
+
+function editTask(index) {
+  const newName = prompt("Ingrese el nuevo nombre de la tarea");
+  const newPriority = prompt("Ingrese la nueva prioridad de la tarea");
+
+  if (newName !== null && newPriority !== null) {
+    tasks[index].name = newName.trim();
+    tasks[index].priority = newPriority.trim();
+    renderTasks();
+  }
 }
 
 window.onload = function() {
